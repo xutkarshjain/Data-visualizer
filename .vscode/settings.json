@@ -1,0 +1,5 @@
+{
+    "scss.format.maxPreserveNewLines": 1,
+    "scss.format.spaceAroundSelectorSeparator": true,
+    "scss.hover.references": true
+}
