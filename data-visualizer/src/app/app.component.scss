@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+
+    .sidebar {
+        height: 100%;
+    }
+
+    .main-panel {
+        flex: 1;
+        background-color: #17b324;
+    }
+}
