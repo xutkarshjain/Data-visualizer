@@ -1,27 +1,32 @@
+@use "../variables.scss" as *;
+
 .container {
     display: flex;
     flex-direction: column;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
     height: 100%;
     align-items: center;
     .brand {
-        padding-top: 20px;
+        padding-top: 40px;
         padding-bottom: 20px;
         img {
-            height: 40px;
+            height: 50px;
         }
     }
+
     .nav-item {
         background-color: #f9fafd;
-        padding: 10px;
+        display: flex;
+        padding: 15px;
         color: gray;
         border-radius: 5px;
         margin: 5px;
+        margin-top: 10px;
         cursor: pointer;
 
         &:hover {
-            background-color: #9979e6;
+            background-color: $primary;
             color: white;
         }
     }
@@ -32,10 +37,10 @@
         margin-bottom: 10px;
         margin-top: 10px;
         img {
-            height: 40px;
+            height: 50px;
             border-radius: 50%;
             object-fit: cover;
-            border: 2px solid #ddd;
+            border: 2px solid $primary;
         }
     }
 }
