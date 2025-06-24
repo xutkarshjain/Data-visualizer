@@ -3,11 +3,13 @@
     <img src="icons/logo.png" alt="" />
   </div>
 
-  @for(navItem of topNavItemsList; track navItem ){
-  <div class="nav-item">
-    <span class="material-symbols-outlined"> {{ navItem }} </span>
+  <div class="top-nav-items">
+    @for(navItem of topNavItemsList; track navItem ){
+    <div class="nav-item">
+      <span class="material-symbols-outlined"> {{ navItem }} </span>
+    </div>
+    }
   </div>
-  }
 
   <div class="bottom-nav-items">
     @for(navItem of bottomNavItemsList; track navItem ){

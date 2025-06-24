@@ -1,0 +1,40 @@
+@use "../variables.scss" as *;
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 20px;
+    color: #181a27;
+    .greeting {
+        margin-right: auto;
+    }
+    .button {
+        display: flex;
+        border: 2px solid lightgray;
+        border-radius: 9px;
+        padding: 5px;
+        align-items: center;
+        width: fit-content;
+        gap: 5px;
+        color: dimgray;
+        padding-left: 12px;
+        height: 31px;
+        font-weight: 600;
+        padding-right: 12px;
+        cursor: pointer;
+        .icon {
+            padding-top: 4px;
+        }
+
+        &.border-less-botton {
+            border-color: transparent;
+        }
+
+        &:hover {
+            background-color: $primary;
+            color: white;
+            border-color: $primary;
+        }
+    }
+}
