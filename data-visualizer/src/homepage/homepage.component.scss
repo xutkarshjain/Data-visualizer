@@ -1,3 +1,15 @@
 .container {
     padding: 30px;
+    .charts-panel {
+        display: flex;
+        padding-top: 30px;
+        gap: 30px;
+        width: 100%;
+        app-bar-chart-card {
+            flex: 2;
+        }
+        app-guage-chart-card {
+            flex: 1;
+        }
+    }
 }
