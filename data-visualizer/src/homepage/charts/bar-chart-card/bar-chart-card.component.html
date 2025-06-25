@@ -17,7 +17,23 @@
       </div>
     </div>
   </div>
-  <div class="body">body</div>
+  <div class="body">
+    <div id="chart">
+      <apx-chart
+        [series]="chartOptions.series"
+        [chart]="chartOptions.chart"
+        [dataLabels]="chartOptions.dataLabels"
+        [stroke]="chartOptions.stroke"
+        [plotOptions]="chartOptions.plotOptions"
+        [legend]="chartOptions.legend"
+        [responsive]="chartOptions.responsive"
+        [xaxis]="chartOptions.xaxis"
+        [yaxis]="chartOptions.yaxis"
+        [fill]="chartOptions.fill"
+        [grid]="chartOptions.grid"
+      ></apx-chart>
+    </div>
+  </div>
   <div class="footer">
     <div class="button">
       <div class="icon"></div>
