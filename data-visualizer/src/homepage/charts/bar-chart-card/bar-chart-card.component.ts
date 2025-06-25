@@ -48,7 +48,6 @@ export class BarChartCardComponent {
           name: 'Best',
           data: [20, 30, 15, 25, 18, 25, 20, 25, 20, 30, 35, 20],
           color: '#6343c0',
-          // color: 'red',
         },
         {
           name: 'Average',
@@ -63,7 +62,7 @@ export class BarChartCardComponent {
       ],
       chart: {
         type: 'bar',
-        height: 300,
+        height: 265,
         stacked: true,
         toolbar: {
           show: false,

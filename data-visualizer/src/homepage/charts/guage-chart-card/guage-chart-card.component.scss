@@ -14,8 +14,9 @@
         gap: 15px;
         height: 84px;
         border-bottom: 2px solid rgba(211, 211, 211, 0.247);
+        padding-left: 15px;
         .image {
-            padding: 15px 0 15px 15px;
+            padding: 15px 0 15px 0px;
 
             img {
                 height: 50px;
@@ -25,7 +26,7 @@
         }
         .text {
             flex: 1;
-            padding: 15px 15px 15px 0;
+            padding: 15px 15px 15px 15px;
 
             .heading {
                 font-size: large;
@@ -72,12 +73,51 @@
     .body {
         padding: 10px 10px 5px 30px;
         flex: 1;
+        position: relative;
+        .chart-and-stats {
+            width: 100%;
+            position: relative;
+            .chart {
+                flex: 5;
+            }
+            .stats {
+                right: 0;
+                top: 0;
+                position: absolute;
+                margin-right: 20px;
+                margin-top: 20px;
+                color: #51ad70;
+                font-weight: 600;
+                .icon {
+                    display: flex;
+                    justify-content: center;
+                    gap: 5px;
+                    align-items: center;
+                }
+            }
+        }
+        .warning-text {
+            position: absolute;
+            bottom: 10px;
+        }
+        .text {
+            flex: 1;
+            padding: 15px 15px 15px 0;
+
+            .heading {
+                font-size: large;
+            }
+            .subheading {
+                color: dimgray;
+                margin-top: 4px;
+            }
+        }
     }
     .footer {
         padding: 10px;
-        height: 45px;
         display: flex;
         align-items: center;
+        max-height: 45px;
         justify-content: right;
         border-top: 2px solid rgba(211, 211, 211, 0.247);
         .button {

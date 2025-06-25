@@ -33,7 +33,7 @@ export class GuageChartCardComponent {
       series: [76],
       chart: {
         type: 'radialBar',
-        height: 350,
+        height: 300,
         offsetY: -20,
       },
       plotOptions: {
@@ -41,7 +41,7 @@ export class GuageChartCardComponent {
           startAngle: -90,
           endAngle: 90,
           track: {
-            background: '#e7e7e7',
+            background: '#ebebf0',
             strokeWidth: '97%',
             margin: 5, // margin is in pixels
             dropShadow: {
@@ -64,15 +64,8 @@ export class GuageChartCardComponent {
         },
       },
       fill: {
-        type: 'gradient',
-        gradient: {
-          shade: 'light',
-          shadeIntensity: 0.4,
-          inverseColors: false,
-          opacityFrom: 1,
-          opacityTo: 1,
-          stops: [0, 50, 53, 91],
-        },
+        colors: '#6343c0',
+        type: 'solid',
       },
       labels: ['Average Results'],
     };
